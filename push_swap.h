@@ -16,10 +16,10 @@ typedef struct s_stack
 	struct s_stack	*tail;
 }					t_stack;
 
-t_stack				*new_stack(int argc, int nb);
+t_stack				*new_stack(int nb);
 void				list_add_back(int argc, t_stack **stack, int elem);
 int					peek(const t_stack *stack);
-t_stack				*pop(t_stack **stack);
+int					pop(t_stack **stack);
 void				dispfree(t_stack *stk);
 void				error(t_stack *stack);
 long long int		atoi_push(t_stack **stack, const char *str);
@@ -37,9 +37,9 @@ void				rb(t_stack *b);
 void				rra(t_stack *a);
 void				rrb(t_stack *b);
 void				rrr(t_stack *a, t_stack *b);
-int	    			ft_push(t_stack **stk, int nbr, int argc);
-void				pa(t_stack **a, t_stack **b, int argc);
-void				pb(t_stack **a, t_stack **b, int argc);
+void				ft_push(t_stack **to, t_stack **from);
+void				pa(t_stack **a, t_stack **b);
+void				pb(t_stack **a, t_stack **b);
 void				sort_5_elements(t_stack **a, t_stack **b, int argc);
 int     			ft_amount(t_stack **stk);
 int					*array(t_stack **stack, int argc, char **argv);

@@ -1,102 +1,51 @@
 #include "push_swap.h"
 
-// void	ft_sa(t_stack *stk) // swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements
-// {
-// 	int		tmp;
-
-// 	if (stk == NULL || stk->next == NULL)
-// 		return ;
-// 	tmp = stk->nbr;
-// 	stk->nbr = stk->next->nbr;
-// 	stk->next->nbr = tmp;
-// }
-
-// int	ft_push(t_stack **stk, int nbr, int argc) //куда пушим и откуда 
+// int	ft_push(t_stack **from, int nbr, int argc) //куда пушим и откуда 
 // {
 // 	t_stack	*new;
 
-// 	if (!stk)
+// 	if (!from)
 // 		return (0);
-// 	if (!*stk) // если нет списка(головы)
+// 	if (!*from) // если нет списка(головы)
 // 	{
-// 		*stk = new_stack(argc, nbr);
-// 		if (!stk)
+// 		*from = new_stack(argc, nbr);
+// 		if (!from)
 // 			return (0);
 // 		return (1);
 // 	}
 // 	new = new_stack(argc, nbr);
 // 	if (!new)
 // 		return (0);
-// 	new->next =  *stk;
-// 	*stk = new;
-// 	return (1);
+// 	new->next =  *from;
+// 	*from = new;
 // }
 
-// void   ft_push(t_stack **first, t_stack **second) // Natashi
-// {
-//     t_stack  *tmp;
-//     if (!*second)
-//         return ;
-//     if (!*first)
-//     {
-//         *first = ft_lstnew((*second)->nbr);
-//         (*first)->flag = (*second)->flag;
-//         (*first)->index = (*second)->index;
-//         tmp = *second;
-//         *second = (*second)->next;
-//         free(tmp);
-//     }
-//     else
-//     {
-//         ft_lstadd_front(first, ft_lst_copy(*second));
-//         tmp = *second;
-//         *second = (*second)->next;
-//         free(tmp);
-//     }
-
-t_stack	*ft_lstlast(t_stack *lst)
+void	ft_push(t_stack **to, t_stack **from)
 {
-	t_stack	*l;
+	t_stack	*tmp;
 
-	l = lst;
-	if (l != NULL)
+	tmp = NULL;
+	if (*from)
 	{
-		while ((*l).next != NULL)
-			l = (*l).next;
-		return (l);
+		if ((*from) && (*from)->next)
+			tmp = (*from)->next;
+		(*from)->next = (*to);
+		(*to) = (*from);
+		(*from) = tmp;
 	}
-	return (NULL);
-}	
+}
 
-void	ft_push(t_stack *this, int nbr, int argc) // Dima
+void	pa(t_stack **a, t_stack **b)
 {
-	t_stack	*new;
-
-	this->tail = ft_lstlast;
-	new = new_stack(argc, nbr);
-	if (this->head == NULL)
-	{
-		this->head = new;
-		this->tail = new;
-	}
-	else
-	{
-		this->head->next = new;
-		new->prev = this->head;
-		this->head = new;
-	}
-
-void	pa(t_stack **a, t_stack **b, int argc)
-{
-	// ft_push(a, pop(b), argc); // пуш в стек А из стека Б (с удалением первого элемента в Б) (where, from)
+	ft_push(a, b); // пуш в стек А из стека Б (с удалением первого элемента в Б) (where, from)
 	// (*a)->amount += 1;
 	// (*b)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
 	write(1, "pa\n", 3);
 }
 
-void	pb(t_stack **a, t_stack **b, int argc)
+void	pb(t_stack **a, t_stack **b)
 {
-	// ft_push (b, pop(a), argc); // пуш в стек Б из стека А (с удалением первого элемента в А)
+	ft_push (b, a); // пуш в стек Б из стека А (с удалением первого элемента в А)
 	// (*a)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
 	// (*b)->amount += 1;
 	write(1, "pb\n", 3);

@@ -21,7 +21,7 @@
 
 // commands
 
-t_stack	*new_stack(int argc, int nb) // создание списка
+t_stack	*new_stack(int nb) // создание списка
 {
 	t_stack	*node;
 
@@ -30,7 +30,6 @@ t_stack	*new_stack(int argc, int nb) // создание списка
 		return (0);
 	node->nbr = nb;
 	node->next = NULL;
-	// node->amount = argc - 1;
 	return (node);
 }
 
@@ -100,12 +99,12 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < (argc))
 	{
-		// node = new_stack(elem);
+		node = new_stack(elem);
 		elem = atoi_push(&a, argv[i]);
 		check_duplicates_maxint(&a, elem);
 		list_add_back(argc, &a, elem);
 		// new_stack(&b);
-		// check_input(&a, argc);
+		check_input(&a, argc);
 		printf("%lld --- \n", elem);
 		i++;
 	}

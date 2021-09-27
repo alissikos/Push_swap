@@ -19,27 +19,28 @@ int	is_sorted(const t_stack *stack)
 	return (1);
 }
 
-int find_max_index(t_stack *a)
-{
-    t_stack *temp;
-    int     max;
-    int     max_index;
-    int     i;
-    max_index = 0;
-        max = temp->nbr;
-        max_index = i;
-        while (temp)
-        {
-            if (temp->nbr > max)
-            {
-                max = temp->nbr;
-                max_index = i;
-            }
-            temp = temp->next;
-            i++;
-        }
-        return (max_index);
-}
+// int find_max_index(t_stack *a)
+// {
+//     t_stack *temp;
+
+//     int     max;
+//     int     max_index;
+//     int     i;
+//     max_index = 0;
+//         max = temp->nbr;
+//         max_index = i;
+//         while (temp)
+//         {
+//             if (temp->nbr > max)
+//             {
+//                 max = temp->nbr;
+//                 max_index = i;
+//             }
+//             temp = temp->next;
+//             i++;
+//         }
+//         return (max_index);
+// }
 
 void frotate(t_stack **stk, int index, int size) // прокрутка стека до нужного элта
 {
@@ -78,12 +79,12 @@ void	sort_5_elements(t_stack **a, t_stack **b, int argc)
 	if (is_sorted(*a) == 0)
 	{
 		frotate(a, find_max_index(*a), 5);
-		pb(a, b, argc);
+		pb(a, b);
 		frotate(a, find_max_index(*a), 4);
-		pb(a, b, argc);
+		pb(a, b);
 		sort_3_elements(a);
-		pa(a, b, argc);
-		pa(a, b, argc);
+		pa(a, b);
+		pa(a, b);
 		ra(*a);
 		ra(*a);
 	}
