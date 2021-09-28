@@ -17,7 +17,7 @@ typedef struct s_stack
 }					t_stack;
 
 t_stack				*new_stack(int nb);
-void				list_add_back(int argc, t_stack **stack, int elem);
+void				list_add_back(t_stack **stack, int elem);
 int					peek(const t_stack *stack);
 int					pop(t_stack **stack);
 void				dispfree(t_stack *stk);

@@ -5,7 +5,7 @@ SRC	=	error.c			\
 		push_swap.c		\
 		s.c				\
 		sort.c			\
-		stack.c			\ 	 
+		stack.c			 
 
 OBJ = 	$(SRC:.c=.o)
 

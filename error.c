@@ -7,14 +7,14 @@ void	error(t_stack *stack)
 	exit (1);
 }
 
-// void	check_input(t_stack **stack, int argc) //провер, что подается на ввод
-// {
-// 	int	i;
+void	check_input(t_stack **stack, int argc) //провер, что подается на ввод
+{
+	int	i;
 
-// 	i = 1; //  перв арг(0) - прогр
-// 	if (argc == 1)
-// 		error(*stack);
-// }
+	i = 1; //  перв арг(0) - прогр
+	if (argc == 1)
+		error(*stack);
+}
 
 void	dispfree(t_stack *stk)
 {

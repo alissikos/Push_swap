@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-int	is_sorted(const t_stack *stack)
+int	is_sorted(t_stack *stack)
 {
 	int	i;
 
@@ -74,21 +74,21 @@ void	sort_3_elements(t_stack **stack)
 		ft_rotate(stack);
 }
 
-void	sort_5_elements(t_stack **a, t_stack **b, int argc)
-{
-	if (is_sorted(*a) == 0)
-	{
-		frotate(a, find_max_index(*a), 5);
-		pb(a, b);
-		frotate(a, find_max_index(*a), 4);
-		pb(a, b);
-		sort_3_elements(a);
-		pa(a, b);
-		pa(a, b);
-		ra(*a);
-		ra(*a);
-	}
-}
+// void	sort_5_elements(t_stack **a, t_stack **b, int argc)
+// {
+// 	if (is_sorted(*a) == 0)
+// 	{
+// 		frotate(a, find_max_index(*a), 5);
+// 		pb(a, b);
+// 		frotate(a, find_max_index(*a), 4);
+// 		pb(a, b);
+// 		sort_3_elements(a);
+// 		pa(a, b);
+// 		pa(a, b);
+// 		ra(*a);
+// 		ra(*a);
+// 	}
+// }
 
 // static int	sum(t_stack *a, int depth)
 // {

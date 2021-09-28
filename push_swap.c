@@ -102,7 +102,7 @@ int	main(int argc, char **argv)
 		node = new_stack(elem);
 		elem = atoi_push(&a, argv[i]);
 		check_duplicates_maxint(&a, elem);
-		list_add_back(argc, &a, elem);
+		list_add_back(&a, elem);
 		// new_stack(&b);
 		check_input(&a, argc);
 		printf("%lld --- \n", elem);
@@ -118,11 +118,11 @@ int	main(int argc, char **argv)
 	}
 	if (argc <= 4)
 		sort_3_elements(&a);
-	else if (argc <= 6)
-		sort_5_elements(&a, &b, argc);
-	printf("Node #%d: %lld\n", i++, tmp->nbr);
+	// else if (argc <= 6)
+	// 	sort_5_elements(&a, &b, argc);
+	// printf("Node #%d: %lld\n", i++, tmp->nbr);
 	tmp->next = node;
-	printf("Node #%d: %lld\n", i++, a->nbr);
+	// printf("Node #%d: %lld\n", i++, a->nbr);
 	a = a->next;
 	while (a)
 	{
