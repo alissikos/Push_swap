@@ -111,7 +111,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	t_stack *tmp;
 	tmp = a;
-	while (tmp->next) // пока есть укль на след элт (принт аргументов)
+	while (tmp) // пока есть укль на след элт (принт аргументов)
 	{
 		printf("Node #%d: %lld\n", i++, tmp->nbr);
 		tmp = tmp->next; // передвигаем указатель 
@@ -121,9 +121,9 @@ int	main(int argc, char **argv)
 	// else if (argc <= 6)
 	// 	sort_5_elements(&a, &b, argc);
 	// printf("Node #%d: %lld\n", i++, tmp->nbr);
-	tmp->next = node;
+//	tmp->next = node;
 	// printf("Node #%d: %lld\n", i++, a->nbr);
-	a = a->next;
+//	a = a->next;
 	while (a)
 	{
 		printf("Final: %lld\n", a->nbr);

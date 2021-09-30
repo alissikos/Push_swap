@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c
+push_swap.h
+/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.h
+
+/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.h
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+

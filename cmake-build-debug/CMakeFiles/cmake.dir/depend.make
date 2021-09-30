@@ -10,6 +10,9 @@ CMakeFiles/cmake.dir/operations.c.o: \
 CMakeFiles/cmake.dir/push_swap.c.o: \
  ../push_swap.c \
  ../push_swap.h
+CMakeFiles/cmake.dir/s.c.o: \
+ ../push_swap.h \
+ ../s.c
 CMakeFiles/cmake.dir/sort.c.o: \
  ../push_swap.h \
  ../sort.c

@@ -66,7 +66,7 @@ void	sort_3_elements(t_stack **stack)
 {
 	if (!(*stack))
 		error(*stack);
-	// if (is_sorted = 1) // сделать флаг/проверку на отсортированность
+//	 if (is_sorted = 1) // сделать флаг/проверку на отсортированность
 	// 	error(stack);
 	if ((*stack)->nbr > (*stack)->next->nbr)
 		sa(stack);

@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c">
+			<Option target="cmake"/>
+		</Unit>
 		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c">
+			<Option target="cmake"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/ft_putstr.c">
 			<Option target="cmake"/>
 		</Unit>
 		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c">
@@ -90,6 +96,9 @@
 			<Option target="cmake"/>
 		</Unit>
 		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.h">
+			<Option target="cmake"/>
+		</Unit>
+		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c">
 			<Option target="cmake"/>
 		</Unit>
 		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c">

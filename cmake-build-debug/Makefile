@@ -129,6 +129,30 @@ cmake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/build
 .PHONY : cmake/fast
 
+additional.o: additional.c.o
+.PHONY : additional.o
+
+# target to build an object file
+additional.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.o
+.PHONY : additional.c.o
+
+additional.i: additional.c.i
+.PHONY : additional.i
+
+# target to preprocess a source file
+additional.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.i
+.PHONY : additional.c.i
+
+additional.s: additional.c.s
+.PHONY : additional.s
+
+# target to generate assembly for a file
+additional.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.s
+.PHONY : additional.c.s
+
 error.o: error.c.o
 .PHONY : error.o
 
@@ -152,6 +176,30 @@ error.s: error.c.s
 error.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/error.c.s
 .PHONY : error.c.s
+
+ft_putstr.o: ft_putstr.c.o
+.PHONY : ft_putstr.o
+
+# target to build an object file
+ft_putstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putstr.c.o
+.PHONY : ft_putstr.c.o
+
+ft_putstr.i: ft_putstr.c.i
+.PHONY : ft_putstr.i
+
+# target to preprocess a source file
+ft_putstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putstr.c.i
+.PHONY : ft_putstr.c.i
+
+ft_putstr.s: ft_putstr.c.s
+.PHONY : ft_putstr.s
+
+# target to generate assembly for a file
+ft_putstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putstr.c.s
+.PHONY : ft_putstr.c.s
 
 operations.o: operations.c.o
 .PHONY : operations.o
@@ -200,6 +248,30 @@ push_swap.s: push_swap.c.s
 push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/push_swap.c.s
 .PHONY : push_swap.c.s
+
+s.o: s.c.o
+.PHONY : s.o
+
+# target to build an object file
+s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.o
+.PHONY : s.c.o
+
+s.i: s.c.i
+.PHONY : s.i
+
+# target to preprocess a source file
+s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.i
+.PHONY : s.c.i
+
+s.s: s.c.s
+.PHONY : s.s
+
+# target to generate assembly for a file
+s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.s
+.PHONY : s.c.s
 
 sort.o: sort.c.o
 .PHONY : sort.o
@@ -258,15 +330,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cmake"
+	@echo "... additional.o"
+	@echo "... additional.i"
+	@echo "... additional.s"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"
+	@echo "... ft_putstr.o"
+	@echo "... ft_putstr.i"
+	@echo "... ft_putstr.s"
 	@echo "... operations.o"
 	@echo "... operations.i"
 	@echo "... operations.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
+	@echo "... s.o"
+	@echo "... s.i"
+	@echo "... s.s"
 	@echo "... sort.o"
 	@echo "... sort.i"
 	@echo "... sort.s"
