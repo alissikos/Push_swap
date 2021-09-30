@@ -64,14 +64,22 @@ void frotate(t_stack **stk, int index, int size) // прокрутка стек�
 
 void	sort_3_elements(t_stack **stack)
 {
+//    t_stack *tmp; // for printf
+
 	if (!(*stack))
 		error(*stack);
 //	 if (is_sorted = 1) // сделать флаг/проверку на отсортированность
 	// 	error(stack);
-	if ((*stack)->nbr > (*stack)->next->nbr)
-		sa(stack);
-	else if ((*stack)->nbr < (*stack)->next->nbr)
-		ft_rotate(stack);
+        if ((*stack)->nbr > (*stack)->next->nbr)
+            sa(stack);
+        else if ((*stack)->nbr < (*stack)->next->nbr)
+            rra(stack);
+//    tmp = (*stack);
+//    while (tmp)
+//    {
+//        printf("1: %lld\n", tmp->nbr);
+//        tmp = tmp->next;
+//    }
 }
 
 // void	sort_5_elements(t_stack **a, t_stack **b, int argc)

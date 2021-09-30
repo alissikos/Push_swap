@@ -177,6 +177,54 @@ error.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/error.c.s
 .PHONY : error.c.s
 
+ft_putchar.o: ft_putchar.c.o
+.PHONY : ft_putchar.o
+
+# target to build an object file
+ft_putchar.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putchar.c.o
+.PHONY : ft_putchar.c.o
+
+ft_putchar.i: ft_putchar.c.i
+.PHONY : ft_putchar.i
+
+# target to preprocess a source file
+ft_putchar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putchar.c.i
+.PHONY : ft_putchar.c.i
+
+ft_putchar.s: ft_putchar.c.s
+.PHONY : ft_putchar.s
+
+# target to generate assembly for a file
+ft_putchar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putchar.c.s
+.PHONY : ft_putchar.c.s
+
+ft_putnbr.o: ft_putnbr.c.o
+.PHONY : ft_putnbr.o
+
+# target to build an object file
+ft_putnbr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putnbr.c.o
+.PHONY : ft_putnbr.c.o
+
+ft_putnbr.i: ft_putnbr.c.i
+.PHONY : ft_putnbr.i
+
+# target to preprocess a source file
+ft_putnbr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putnbr.c.i
+.PHONY : ft_putnbr.c.i
+
+ft_putnbr.s: ft_putnbr.c.s
+.PHONY : ft_putnbr.s
+
+# target to generate assembly for a file
+ft_putnbr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putnbr.c.s
+.PHONY : ft_putnbr.c.s
+
 ft_putstr.o: ft_putstr.c.o
 .PHONY : ft_putstr.o
 
@@ -200,6 +248,30 @@ ft_putstr.s: ft_putstr.c.s
 ft_putstr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_putstr.c.s
 .PHONY : ft_putstr.c.s
+
+ft_strlen.o: ft_strlen.c.o
+.PHONY : ft_strlen.o
+
+# target to build an object file
+ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_strlen.c.o
+.PHONY : ft_strlen.c.o
+
+ft_strlen.i: ft_strlen.c.i
+.PHONY : ft_strlen.i
+
+# target to preprocess a source file
+ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_strlen.c.i
+.PHONY : ft_strlen.c.i
+
+ft_strlen.s: ft_strlen.c.s
+.PHONY : ft_strlen.s
+
+# target to generate assembly for a file
+ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/ft_strlen.c.s
+.PHONY : ft_strlen.c.s
 
 operations.o: operations.c.o
 .PHONY : operations.o
@@ -336,9 +408,18 @@ help:
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"
+	@echo "... ft_putchar.o"
+	@echo "... ft_putchar.i"
+	@echo "... ft_putchar.s"
+	@echo "... ft_putnbr.o"
+	@echo "... ft_putnbr.i"
+	@echo "... ft_putnbr.s"
 	@echo "... ft_putstr.o"
 	@echo "... ft_putstr.i"
 	@echo "... ft_putstr.s"
+	@echo "... ft_strlen.o"
+	@echo "... ft_strlen.i"
+	@echo "... ft_strlen.s"
 	@echo "... operations.o"
 	@echo "... operations.i"
 	@echo "... operations.s"

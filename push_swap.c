@@ -111,11 +111,12 @@ int	main(int argc, char **argv)
 	i = 1;
 	t_stack *tmp;
 	tmp = a;
-	while (tmp) // пока есть укль на след элт (принт аргументов)
-	{
-		printf("Node #%d: %lld\n", i++, tmp->nbr);
-		tmp = tmp->next; // передвигаем указатель 
-	}
+    see_stack(a);
+//	while (tmp) // пока есть укль на след элт (принт аргументов)
+//	{
+//		printf("Node #%d: %lld\n", i++, tmp->nbr);
+//		tmp = tmp->next; // передвигаем указатель
+//	}
 	if (argc <= 4)
 		sort_3_elements(&a);
 	// else if (argc <= 6)
@@ -129,6 +130,7 @@ int	main(int argc, char **argv)
 		printf("Final: %lld\n", a->nbr);
 		a = a->next;
 	}
+    see_stack(a);
 	return (1);
 }
 
