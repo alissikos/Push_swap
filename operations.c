@@ -77,16 +77,16 @@ void	sa(t_stack **a)
 	write(1, "sa\n", 3);
 }
 
-void	sb(t_stack *b) 
+void	sb(t_stack **b)
 {
-	ft_swap(&b);
+	ft_swap(b);
 	write(1, "sb\n", 3);
 }
 
-void	ss(t_stack *a, t_stack *b)
+void	ss(t_stack **a, t_stack **b)
 {
-	ft_swap(&a);
-	ft_swap(&b);
+	ft_swap(a);
+	ft_swap(b);
 	write(1, "ss\n", 3);
 }
 
@@ -111,15 +111,15 @@ void	ft_rotate(t_stack	**stk)
 	// printf("Last: %lld\n", last->nbr);
 }
 
-void	ra(t_stack *a)
+void	ra(t_stack **a)
 {
-	ft_rotate(&a);
+	ft_rotate(a);
 	write(1, "ra\n", 3);
 }
 
-void	rb(t_stack *b)
+void	rb(t_stack **b)
 {
-	ft_rotate(&b);
+	ft_rotate(b);
 	write(1, "rb\n", 3);
 }
 
@@ -129,10 +129,16 @@ void	rrotate(t_stack **stk)
 	t_stack	*first;
 	t_stack	*last;
 
-	if (!(*stk)->next)
+	if (!(*stk) || !(*stk)->next)
 		return ;
 	tmp = *stk;
 	last = *stk;
+    while (tmp) // пока есть укль на след элт (принт аргументов)
+    {
+        printf("Tmp : %lld\n", tmp->nbr);
+        tmp = tmp->next; // передвигаем указатель
+    }
+    tmp = *stk;
 	while (tmp->next)
 	{
 		if (!tmp->next->next)
@@ -145,21 +151,21 @@ void	rrotate(t_stack **stk)
     *stk = first;
 }
 
-void	rra(t_stack *a)
+void	rra(t_stack **a)
 {
-	rrotate(&a);
+	rrotate(a);
 	write(1, "rra\n", 4);
 }
 
-void	rrb(t_stack *b)
+void	rrb(t_stack **b)
 {
-	rrotate(&b);
+	rrotate(b);
 	write(1, "rrb\n", 4);
 }
 
-void	rrr(t_stack *a, t_stack *b)
+void	rrr(t_stack **a, t_stack **b)
 {
-	rrotate(&a);
-	rrotate(&b);
+	rrotate(a);
+	rrotate(b);
 	write(1, "rrr\n", 4);
 }

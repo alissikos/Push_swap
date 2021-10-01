@@ -30,20 +30,25 @@ void				ft_rotate(t_stack	**stk);
 void				rrotate(t_stack **stk);
 void				sort_3_elements(t_stack **stack);
 void				sa(t_stack **a);
-void				sb(t_stack *b);
-void				ss(t_stack *a, t_stack *b);
-void				ra(t_stack *a);
-void				rb(t_stack *b);
-void				rra(t_stack *a);
-void				rrb(t_stack *b);
-void				rrr(t_stack *a, t_stack *b);
+void				sb(t_stack **b);
+void				ss(t_stack **a, t_stack **b);
+void				ra(t_stack **a);
+void				rb(t_stack **b);
+void				rra(t_stack **a);
+void				rrb(t_stack **b);
+void				rrr(t_stack **a, t_stack **b);
 void				ft_push(t_stack **to, t_stack **from);
 void				pa(t_stack **a, t_stack **b);
 void				pb(t_stack **a, t_stack **b);
 void				sort_5_elements(t_stack **a, t_stack **b, int argc);
-int     			ft_amount(t_stack **stk);
+int                 ft_amount(t_stack *stk);
 int					*array(t_stack **stack, int argc, char **argv);
-
+int                 ft_check_position(t_stack *stk);
+void                sort_100_a(t_stack **a, t_stack **b);
+void                sort_100_b(t_stack **a, t_stack **b);
+void                stack_100(t_stack **a, t_stack **b);
+int                 ft_max_index(t_stack **stk);
+int                 is_sorted(t_stack *stack);
 
 
 

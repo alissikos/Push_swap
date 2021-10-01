@@ -2,21 +2,22 @@
 
 int	is_sorted(t_stack *stack)
 {
-	int	i;
+	int	flag;
 
-	i = 1; // почему ? 
+	flag = 0; // почему ?
 	if (!stack)
 		error(stack);
 	while (stack->next)
 	{
-		i++; // почему ? 
 		if (stack->nbr > stack->next->nbr)
-			return (0);
-		stack = stack->next; // двигаемся по списку
+			flag++; // знак того что ЕСТЬ неупорядоченный элемент
+        stack = stack->next; // двигаемся по списку
 	}
+    if (flag != 0)
+        return (0); // несортир
 	// if (amount != i) // почему ? 
 	// 	return (0);
-	return (1);
+	return (1); // сортир!!!!!!
 }
 
 // int find_max_index(t_stack *a)
@@ -48,7 +49,7 @@ void frotate(t_stack **stk, int index, int size) // прокрутка стек�
     {
         while (index > 0)
         {
-            ra(*stk);
+            ra(stk);
             index--;
         }
     }
@@ -56,7 +57,7 @@ void frotate(t_stack **stk, int index, int size) // прокрутка стек�
     {
         while (index < size)
         {
-            rra(*stk);
+            rra(stk);
             index++;
         }
     }
@@ -68,12 +69,13 @@ void	sort_3_elements(t_stack **stack)
 
 	if (!(*stack))
 		error(*stack);
-//	 if (is_sorted = 1) // сделать флаг/проверку на отсортированность
-	// 	error(stack);
+    while (is_sorted(*stack) == 0) //пока НЕСОРТИР
+    {
         if ((*stack)->nbr > (*stack)->next->nbr)
             sa(stack);
         else if ((*stack)->nbr < (*stack)->next->nbr)
             rra(stack);
+    }
 //    tmp = (*stack);
 //    while (tmp)
 //    {

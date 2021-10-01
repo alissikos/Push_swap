@@ -86,17 +86,20 @@ void	ft_print(t_stack *aaa, t_stack *bbb)
 
 int	main(int argc, char **argv)
 {
-	t_stack		*a; // создаем голову элт списка
-	t_stack		*b;
-	t_stack		*node;
-	int			i;
-	long	long int			elem;
+	t_stack		        *a; // создаем голову элт списка
+	t_stack		        *b;
+	t_stack		        *node;
+	int			        i;
+	long	long int    elem;
+    long	long int    *arr;
 
 	if (argc == 1)
 		error(NULL);
 	a = NULL;
 	b = NULL;
 	i = 1;
+    arr = malloc(sizeof(long long int) * argc);
+
 	while (i < (argc))
 	{
 		node = new_stack(elem);
@@ -104,6 +107,8 @@ int	main(int argc, char **argv)
 		check_duplicates_maxint(&a, elem);
 		list_add_back(&a, elem);
 		// new_stack(&b);
+        arr[i - 1] = a->nbr;
+        printf("massive %lld", arr[i]);
 		check_input(&a, argc);
 		printf("%lld --- \n", elem);
 		i++;
@@ -111,7 +116,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	t_stack *tmp;
 	tmp = a;
-    see_stack(a);
+//    see_stack(a);
 //	while (tmp) // пока есть укль на след элт (принт аргументов)
 //	{
 //		printf("Node #%d: %lld\n", i++, tmp->nbr);
@@ -125,12 +130,14 @@ int	main(int argc, char **argv)
 //	tmp->next = node;
 	// printf("Node #%d: %lld\n", i++, a->nbr);
 //	a = a->next;
+    if (argc <= 102 && argc >= 5)
+        stack_100(&a, &b);
 	while (a)
 	{
 		printf("Final: %lld\n", a->nbr);
 		a = a->next;
 	}
-    see_stack(a);
+//    see_stack(a);
 	return (1);
 }
 
