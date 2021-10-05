@@ -8,13 +8,20 @@
 typedef struct s_stack
 {
 	long long int	nbr;
-    int             index;
-    int             flag;
 	struct s_stack	*next;
-//	int				amount; // кол-во элементов в списке
-	struct s_stack	*head; // укль на голову списка 
-	struct s_stack	*tail;
+    int             index;
+//	struct s_stack	*head; // укль на голову списка
+//	struct s_stack	*tail;
 }					t_stack;
+
+typedef struct s_info
+{
+    long long int   *arr;
+//    int             index;
+//    int             flag;
+    struct s_stack  *head;
+
+}                   t_info;
 
 t_stack				*new_stack(int nb);
 void				list_add_back(t_stack **stack, int elem);
@@ -24,7 +31,7 @@ void				dispfree(t_stack *stk);
 void				error(t_stack *stack);
 long long int		atoi_push(t_stack **stack, const char *str);
 void				check_input(t_stack **stack, int argc);
-void				check_duplicates_maxint(t_stack **stack, long long int elem);
+void				check_duplicates_maxint(t_stack **stack, int elem);
 void				ft_swap(t_stack **stk);
 void				ft_rotate(t_stack	**stk);
 void				rrotate(t_stack **stk);
@@ -37,18 +44,28 @@ void				rb(t_stack **b);
 void				rra(t_stack **a);
 void				rrb(t_stack **b);
 void				rrr(t_stack **a, t_stack **b);
-void				ft_push(t_stack **to, t_stack **from);
-void				pa(t_stack **a, t_stack **b);
-void				pb(t_stack **a, t_stack **b);
+void	            ft_push(t_stack **dest, t_stack **src);
+void	            pa(t_stack **dest, t_stack **src);
+void	            pb(t_stack **dest, t_stack **src);
 void				sort_5_elements(t_stack **a, t_stack **b, int argc);
 int                 ft_amount(t_stack *stk);
 int					*array(t_stack **stack, int argc, char **argv);
 int                 ft_check_position(t_stack *stk);
-void                sort_100_a(t_stack **a, t_stack **b);
-void                sort_100_b(t_stack **a, t_stack **b);
-void                stack_100(t_stack **a, t_stack **b);
+void                sort_100_a(t_stack **a, t_stack **b, t_info **info);
+void                sort_b(t_stack **a, t_stack **b);
+void                stack_100(t_stack **a, t_stack **b, t_info **info);
 int                 ft_max_index(t_stack **stk);
-int                 is_sorted(t_stack *stack);
+int	                is_sorted(t_stack **stack);
+void	            see_stack(const t_stack *a);
+int	                ft_strlen(char *str);
+void	            ft_putchar(char c);
+void	            ft_putnbr(int n);
+void	            ft_putstr(char *str);
+void	            ft_print_order(const t_stack *a);
+void	            sort_array(long long int **array, int start, int end);
+int                 get_index(long long int *arr, int nbr);
+void                sort_500_a(t_stack **a, t_stack **b, t_info **info);
+void                stack_500(t_stack **a, t_stack **b, t_info **info);
 
 
 

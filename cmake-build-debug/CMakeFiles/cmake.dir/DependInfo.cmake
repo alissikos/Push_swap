@@ -9,11 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/additional.c.o"
+  "/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/array.c.o"
   "/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/error.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/ft_putchar.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/ft_putchar.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/ft_putnbr.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/ft_putnbr.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/ft_putstr.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/ft_putstr.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/ft_strlen.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/ft_strlen.c.o"
   "/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/operations.c.o"
   "/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/push_swap.c.o"
   "/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/s.c.o"

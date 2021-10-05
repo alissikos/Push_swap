@@ -53,6 +53,41 @@
 //	ft_print_stack(b, data);
 //}
 
+int	ft_strlen(char *str)
+{
+    int	len;
+
+    len = 0;
+    while (*str++ != '\0')
+        len++;
+    return (len);
+}
+
+void	ft_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+void	ft_putnbr(int n)
+{
+    long long	number;
+
+    number = (long long) n;
+    if (number < 0)
+    {
+        write(1, "-", 1);
+        number = -number;
+    }
+    if (number >= 10)
+        ft_putnbr(number / 10);
+    ft_putchar((number % 10) + '0');
+}
+
+void	ft_putstr(char *str)
+{
+    write(1, str, ft_strlen(str));
+}
+
 void	ft_print_order(const t_stack *a) // для проверки, потом удалить функцию
 {
 	while (a)
@@ -87,3 +122,5 @@ void	testing_100(t_stack *a, t_stack *b)
 	printf("Стек B:\n");
 	see_stack(b);
 }
+
+

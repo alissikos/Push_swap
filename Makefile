@@ -5,7 +5,9 @@ SRC	=	error.c			\
 		push_swap.c		\
 		s.c				\
 		sort.c			\
-		stack.c			 
+		stack.c			\
+		array.c			\
+		additional.c
 
 OBJ = 	$(SRC:.c=.o)
 
@@ -15,7 +17,7 @@ RM =	rm -f
 
 INCL =	push_swap.h
 
-FLAGS = -Wall -Wextra -Werror -g
+FLAGS = -Wall -Wextra -Werror -g -fsanitize=address
 
 all :	$(NAME)
 

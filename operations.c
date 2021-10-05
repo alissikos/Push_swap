@@ -20,32 +20,32 @@
 // 	*from = new;
 // }
 
-void	ft_push(t_stack **to, t_stack **from)
+void	ft_push(t_stack **dest, t_stack **src)
 {
 	t_stack	*tmp;
 
 	tmp = NULL;
-	if (*from)
+	if (*src)
 	{
-		if ((*from) && (*from)->next)
-			tmp = (*from)->next;
-		(*from)->next = (*to);
-		(*to) = (*from);
-		(*from) = tmp;
+		if ((*src) && (*src)->next)
+			tmp = (*src)->next;
+		(*src)->next = (*dest);
+		(*dest) = (*src);
+		(*src) = tmp;
 	}
 }
 
-void	pa(t_stack **a, t_stack **b)
+void	pa(t_stack **dest, t_stack **src)
 {
-	ft_push(a, b); // пуш в стек А из стека Б (с удалением первого элемента в Б) (where, from)
+	ft_push(dest, src); // пуш в стек А из стека Б (с удалением первого элемента в Б) (where, from)
 	// (*a)->amount += 1;
 	// (*b)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
 	write(1, "pa\n", 3);
 }
 
-void	pb(t_stack **a, t_stack **b)
+void	pb(t_stack **dest, t_stack **src)
 {
-	ft_push (b, a); // пуш в стек Б из стека А (с удалением первого элемента в А)
+	ft_push (dest, src); // пуш в стек Б из стека А (с удалением первого элемента в А)
 	// (*a)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
 	// (*b)->amount += 1;
 	write(1, "pb\n", 3);
@@ -95,7 +95,7 @@ void	ft_rotate(t_stack	**stk)
 	t_stack	*last;
 	t_stack	*first;
 
-	if (!(*stk)->next)
+	if (!(*stk) || !(*stk)->next)
 		return ;
 	last = *stk;
 	first = (*stk)->next;
@@ -133,12 +133,12 @@ void	rrotate(t_stack **stk)
 		return ;
 	tmp = *stk;
 	last = *stk;
-    while (tmp) // пока есть укль на след элт (принт аргументов)
-    {
-        printf("Tmp : %lld\n", tmp->nbr);
-        tmp = tmp->next; // передвигаем указатель
-    }
-    tmp = *stk;
+//    while (tmp) // пока есть укль на след элт (принт аргументов)
+//    {
+//        printf("Tmp : %lld\n", tmp->nbr);
+//        tmp = tmp->next; // передвигаем указатель
+//    }
+//    tmp = *stk;
 	while (tmp->next)
 	{
 		if (!tmp->next->next)

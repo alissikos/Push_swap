@@ -1,22 +1,23 @@
 #include "push_swap.h"
 
-int	is_sorted(t_stack *stack)
+int	is_sorted(t_stack **stack)
 {
-	int	flag;
+    t_stack    *tmp;
+    int	flag;
 
-	flag = 0; // почему ?
-	if (!stack)
-		error(stack);
-	while (stack->next)
+    tmp = *stack;
+	flag = 0;
+	if (!tmp)
+		error(*stack);
+	while (tmp->next)
 	{
-		if (stack->nbr > stack->next->nbr)
+//        printf("Tmp: %lld/n", tmp->nbr);
+		if (tmp->nbr > tmp->next->nbr)
 			flag++; // знак того что ЕСТЬ неупорядоченный элемент
-        stack = stack->next; // двигаемся по списку
+        tmp = tmp->next; // двигаемся по списку
 	}
     if (flag != 0)
         return (0); // несортир
-	// if (amount != i) // почему ? 
-	// 	return (0);
 	return (1); // сортир!!!!!!
 }
 
@@ -65,23 +66,15 @@ void frotate(t_stack **stk, int index, int size) // прокрутка стек�
 
 void	sort_3_elements(t_stack **stack)
 {
-//    t_stack *tmp; // for printf
-
 	if (!(*stack))
 		error(*stack);
-    while (is_sorted(*stack) == 0) //пока НЕСОРТИР
+    while (is_sorted(stack) == 0) //пока НЕСОРТИР
     {
         if ((*stack)->nbr > (*stack)->next->nbr)
             sa(stack);
         else if ((*stack)->nbr < (*stack)->next->nbr)
             rra(stack);
     }
-//    tmp = (*stack);
-//    while (tmp)
-//    {
-//        printf("1: %lld\n", tmp->nbr);
-//        tmp = tmp->next;
-//    }
 }
 
 // void	sort_5_elements(t_stack **a, t_stack **b, int argc)

@@ -4,9 +4,9 @@ void	list_add_back(t_stack **stack, int elem) // добавл в конец сп
 {
 	t_stack	*tmp;
 
-	tmp = *stack;
-	if (tmp)
+    if (stack && *stack)
 	{
+        tmp = *stack;
 		while (tmp->next) // пока есть укль на след элт
 		{
 			tmp = tmp->next;
@@ -14,7 +14,7 @@ void	list_add_back(t_stack **stack, int elem) // добавл в конец сп
 		tmp->next = new_stack(elem);
 	}
 	else
-		*stack = new_stack(elem);
+        *stack = new_stack(elem);
 }
 
 int	peek(const t_stack *stack) // ук-ль на первый эл-т 

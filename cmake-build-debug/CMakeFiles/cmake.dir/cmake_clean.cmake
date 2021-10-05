@@ -1,10 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cmake.dir/additional.c.o"
+  "CMakeFiles/cmake.dir/array.c.o"
   "CMakeFiles/cmake.dir/error.c.o"
-  "CMakeFiles/cmake.dir/ft_putchar.c.o"
-  "CMakeFiles/cmake.dir/ft_putnbr.c.o"
-  "CMakeFiles/cmake.dir/ft_putstr.c.o"
-  "CMakeFiles/cmake.dir/ft_strlen.c.o"
   "CMakeFiles/cmake.dir/operations.c.o"
   "CMakeFiles/cmake.dir/push_swap.c.o"
   "CMakeFiles/cmake.dir/s.c.o"

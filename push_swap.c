@@ -33,89 +33,79 @@ t_stack	*new_stack(int nb) // создание списка
 	return (node);
 }
 
-void	check_duplicates_maxint(t_stack **stack, long long int elem)
+void	check_duplicates_maxint(t_stack **stack, int elem)
 {
 	t_stack		*tmp;
 
 	tmp = *stack;
-	while (tmp != NULL)
+//    if (!tmp)
+//        error(*stack);
+//    tmp = tmp->next;
+    if (elem > INT_MAX || elem < INT_MIN)
+        error(*stack);
+	while (tmp->next != NULL)
 	{
 		if (tmp->nbr == elem)
 			error(*stack);
-		if (elem > INT_MAX || elem < INT_MIN)
-			error(*stack);
 		tmp = tmp->next;
 	}
-}
-
-int	*array(t_stack **stack, int argc, char **argv)
-{
-	int				i;
-	int				*arr;
-	long long int	elem;
-
-	i = 1;
-	arr = malloc(sizeof(int) * argc);
-	if (!arr)
-		return (NULL);
-	while (argc != i)
-	{
-		elem = atoi_push(stack, argv[i]);
-		arr[i - 1] = (int)elem;
-		i++;
-	}
-	return (arr);
-}
-
-void	ft_print(t_stack *aaa, t_stack *bbb)
-{
-	t_stack *a = aaa;
-	t_stack *b = bbb;
-	while(a && a->next)
-	{
-		printf("Value: %lld\n", a->nbr);
-		a = a->next;
-	}
-	while(b && b->next)
-	{
-		printf("Value: %lld\n", b->nbr);
-		b = b->next;
-	}
-	write(1, "--------\n", 9);
 }
 
 int	main(int argc, char **argv)
 {
 	t_stack		        *a; // создаем голову элт списка
 	t_stack		        *b;
-	t_stack		        *node;
+    t_info              *info;
+    t_stack             *buf;
 	int			        i;
 	long	long int    elem;
-    long	long int    *arr;
 
 	if (argc == 1)
 		error(NULL);
 	a = NULL;
 	b = NULL;
-	i = 1;
-    arr = malloc(sizeof(long long int) * argc);
 
-	while (i < (argc))
+	i = 1;
+    check_input(NULL, argc);
+    info = malloc(sizeof(t_info));
+    info->arr = malloc(sizeof(long long) * argc);
+	while (i < argc)
 	{
-		node = new_stack(elem);
 		elem = atoi_push(&a, argv[i]);
-		check_duplicates_maxint(&a, elem);
-		list_add_back(&a, elem);
-		// new_stack(&b);
-        arr[i - 1] = a->nbr;
-        printf("massive %lld", arr[i]);
-		check_input(&a, argc);
-		printf("%lld --- \n", elem);
+        list_add_back(&a, elem);
+        if (i == 1)
+        {
+            info->head = a;
+            buf = a;
+        }
+        while (buf->next)
+            buf = buf->next;
+        buf->index = i - 1;
+//        printf("last %lld\n", buf->nbr);
+//        check_duplicates_maxint(&a, elem);
+        info->arr[i - 1] = elem;
+//        printf("massive %lld\n", info->arr[i - 1]);
+//		printf("%lld --- \n", elem);
+//        printf("I: %d\n", i);
 		i++;
 	}
-	i = 1;
-	t_stack *tmp;
-	tmp = a;
+    info->arr[i - 1] = '\0';
+    sort_array(&info->arr, 0, argc - 2);
+//    i = 0; // for print
+//    while (i < argc - 2) // for print
+//    {
+//        printf("Arr: %lld\n", info->arr[i]);
+//        i++;
+//    } // for print
+
+//    while (a)
+//    {
+//        printf("A: %lld\n", a->nbr);
+//        if (a->next)
+//            a = a->next;
+//        if (!(a->next))
+//            break;
+//    }
 //    see_stack(a);
 //	while (tmp) // пока есть укль на след элт (принт аргументов)
 //	{
@@ -126,17 +116,15 @@ int	main(int argc, char **argv)
 		sort_3_elements(&a);
 	// else if (argc <= 6)
 	// 	sort_5_elements(&a, &b, argc);
-	// printf("Node #%d: %lld\n", i++, tmp->nbr);
-//	tmp->next = node;
-	// printf("Node #%d: %lld\n", i++, a->nbr);
-//	a = a->next;
-    if (argc <= 102 && argc >= 5)
-        stack_100(&a, &b);
-	while (a)
-	{
-		printf("Final: %lld\n", a->nbr);
-		a = a->next;
-	}
+    if (argc <= 101 && argc >= 5)
+        stack_100(&a, &b, &info);
+    else if (argc > 101)
+        stack_500(&a, &b, &info);
+//	while (a) // print final
+//	{
+//		printf("Final: %lld\n", a->nbr);
+//		a = a->next;
+//	}
 //    see_stack(a);
 	return (1);
 }
@@ -187,3 +175,38 @@ int	main(int argc, char **argv)
 // }
 
 
+//int	*array(t_stack **stack, int argc, char **argv)
+//{
+//	int				i;
+//	int				*arr;
+//	long long int	elem;
+//
+//	i = 1;
+//	arr = malloc(sizeof(int) * argc);
+//	if (!arr)
+//		return (NULL);
+//	while (argc != i)
+//	{
+//		elem = atoi_push(stack, argv[i]);
+//		arr[i - 1] = (int)elem;
+//		i++;
+//	}
+//	return (arr);
+//}
+
+//void	ft_print(t_stack *aaa, t_stack *bbb)
+//{
+//	t_stack *a = aaa;
+//	t_stack *b = bbb;
+//	while(a && a->next)
+//	{
+//		printf("Value: %lld\n", a->nbr);
+//		a = a->next;
+//	}
+//	while(b && b->next)
+//	{
+//		printf("Value: %lld\n", b->nbr);
+//		b = b->next;
+//	}
+//	write(1, "--------\n", 9);
+//}

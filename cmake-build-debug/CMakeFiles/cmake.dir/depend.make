@@ -7,18 +7,6 @@ CMakeFiles/cmake.dir/additional.c.o: \
 CMakeFiles/cmake.dir/error.c.o: \
  ../error.c \
  ../push_swap.h
-CMakeFiles/cmake.dir/ft_putchar.c.o: \
- ../ft_putchar.c \
- ../push_swap.h
-CMakeFiles/cmake.dir/ft_putnbr.c.o: \
- ../ft_putnbr.c \
- ../push_swap.h
-CMakeFiles/cmake.dir/ft_putstr.c.o: \
- ../ft_putstr.c \
- ../push_swap.h
-CMakeFiles/cmake.dir/ft_strlen.c.o: \
- ../ft_strlen.c \
- ../push_swap.h
 CMakeFiles/cmake.dir/operations.c.o: \
  ../operations.c \
  ../push_swap.h
