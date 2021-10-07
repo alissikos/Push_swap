@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/aheidy/push_swap copy/push_swap 17:08 4"
+CMAKE_SOURCE_DIR = /Users/aheidy/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/aheidy/push_swap/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cmake.dir/depend.make
@@ -68,107 +68,107 @@ include CMakeFiles/cmake.dir/flags.make
 
 CMakeFiles/cmake.dir/error.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/error.c.o: ../error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cmake.dir/error.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/error.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cmake.dir/error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/error.c.o -c /Users/aheidy/push_swap/error.c
 
 CMakeFiles/cmake.dir/error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/error.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c" > CMakeFiles/cmake.dir/error.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/error.c > CMakeFiles/cmake.dir/error.c.i
 
 CMakeFiles/cmake.dir/error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/error.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c" -o CMakeFiles/cmake.dir/error.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/error.c -o CMakeFiles/cmake.dir/error.c.s
 
 CMakeFiles/cmake.dir/operations.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/operations.c.o: ../operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cmake.dir/operations.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/operations.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cmake.dir/operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/operations.c.o -c /Users/aheidy/push_swap/operations.c
 
 CMakeFiles/cmake.dir/operations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/operations.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c" > CMakeFiles/cmake.dir/operations.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/operations.c > CMakeFiles/cmake.dir/operations.c.i
 
 CMakeFiles/cmake.dir/operations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/operations.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c" -o CMakeFiles/cmake.dir/operations.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/operations.c -o CMakeFiles/cmake.dir/operations.c.s
 
 CMakeFiles/cmake.dir/push_swap.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/push_swap.c.o: ../push_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cmake.dir/push_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/push_swap.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cmake.dir/push_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/push_swap.c.o -c /Users/aheidy/push_swap/push_swap.c
 
 CMakeFiles/cmake.dir/push_swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/push_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c" > CMakeFiles/cmake.dir/push_swap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/push_swap.c > CMakeFiles/cmake.dir/push_swap.c.i
 
 CMakeFiles/cmake.dir/push_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/push_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c" -o CMakeFiles/cmake.dir/push_swap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/push_swap.c -o CMakeFiles/cmake.dir/push_swap.c.s
 
 CMakeFiles/cmake.dir/sort.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/sort.c.o: ../sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cmake.dir/sort.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/sort.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cmake.dir/sort.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/sort.c.o -c /Users/aheidy/push_swap/sort.c
 
 CMakeFiles/cmake.dir/sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/sort.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c" > CMakeFiles/cmake.dir/sort.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/sort.c > CMakeFiles/cmake.dir/sort.c.i
 
 CMakeFiles/cmake.dir/sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/sort.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c" -o CMakeFiles/cmake.dir/sort.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/sort.c -o CMakeFiles/cmake.dir/sort.c.s
 
 CMakeFiles/cmake.dir/stack.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/stack.c.o: ../stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cmake.dir/stack.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/stack.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/stack.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cmake.dir/stack.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/stack.c.o -c /Users/aheidy/push_swap/stack.c
 
 CMakeFiles/cmake.dir/stack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/stack.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/stack.c" > CMakeFiles/cmake.dir/stack.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/stack.c > CMakeFiles/cmake.dir/stack.c.i
 
 CMakeFiles/cmake.dir/stack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/stack.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/stack.c" -o CMakeFiles/cmake.dir/stack.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/stack.c -o CMakeFiles/cmake.dir/stack.c.s
 
 CMakeFiles/cmake.dir/s.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/s.c.o: ../s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cmake.dir/s.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/s.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cmake.dir/s.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/s.c.o -c /Users/aheidy/push_swap/s.c
 
 CMakeFiles/cmake.dir/s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/s.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c" > CMakeFiles/cmake.dir/s.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/s.c > CMakeFiles/cmake.dir/s.c.i
 
 CMakeFiles/cmake.dir/s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/s.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c" -o CMakeFiles/cmake.dir/s.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/s.c -o CMakeFiles/cmake.dir/s.c.s
 
 CMakeFiles/cmake.dir/additional.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/additional.c.o: ../additional.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cmake.dir/additional.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/additional.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cmake.dir/additional.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/additional.c.o -c /Users/aheidy/push_swap/additional.c
 
 CMakeFiles/cmake.dir/additional.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/additional.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c" > CMakeFiles/cmake.dir/additional.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/additional.c > CMakeFiles/cmake.dir/additional.c.i
 
 CMakeFiles/cmake.dir/additional.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/additional.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c" -o CMakeFiles/cmake.dir/additional.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/additional.c -o CMakeFiles/cmake.dir/additional.c.s
 
 CMakeFiles/cmake.dir/array.c.o: CMakeFiles/cmake.dir/flags.make
 CMakeFiles/cmake.dir/array.c.o: ../array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cmake.dir/array.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/array.c.o -c "/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cmake.dir/array.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cmake.dir/array.c.o -c /Users/aheidy/push_swap/array.c
 
 CMakeFiles/cmake.dir/array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cmake.dir/array.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c" > CMakeFiles/cmake.dir/array.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aheidy/push_swap/array.c > CMakeFiles/cmake.dir/array.c.i
 
 CMakeFiles/cmake.dir/array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cmake.dir/array.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c" -o CMakeFiles/cmake.dir/array.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aheidy/push_swap/array.c -o CMakeFiles/cmake.dir/array.c.s
 
 # Object files for target cmake
 cmake_OBJECTS = \
@@ -194,7 +194,7 @@ cmake: CMakeFiles/cmake.dir/additional.c.o
 cmake: CMakeFiles/cmake.dir/array.c.o
 cmake: CMakeFiles/cmake.dir/build.make
 cmake: CMakeFiles/cmake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable cmake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cmake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -206,6 +206,6 @@ CMakeFiles/cmake.dir/clean:
 .PHONY : CMakeFiles/cmake.dir/clean
 
 CMakeFiles/cmake.dir/depend:
-	cd "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/aheidy/push_swap copy/push_swap 17:08 4" "/Users/aheidy/push_swap copy/push_swap 17:08 4" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/aheidy/push_swap/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aheidy/push_swap /Users/aheidy/push_swap /Users/aheidy/push_swap/cmake-build-debug /Users/aheidy/push_swap/cmake-build-debug /Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cmake.dir/depend
 

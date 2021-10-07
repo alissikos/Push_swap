@@ -82,7 +82,7 @@ int	main(int argc, char **argv)
             buf = buf->next;
         buf->index = i - 1;
 //        printf("last %lld\n", buf->nbr);
-//        check_duplicates_maxint(&a, elem);
+        check_duplicates_maxint(&a, elem);
         info->arr[i - 1] = elem;
 //        printf("massive %lld\n", info->arr[i - 1]);
 //		printf("%lld --- \n", elem);
@@ -114,9 +114,11 @@ int	main(int argc, char **argv)
 //	}
 	if (argc <= 4)
 		sort_3_elements(&a);
+    if (argc > 4 && argc <= 6)
+        sort_5_elements(&a, &b, &info, argc);
 	// else if (argc <= 6)
 	// 	sort_5_elements(&a, &b, argc);
-    if (argc <= 101 && argc >= 5)
+    if (argc <= 101 && argc >= 7)
         stack_100(&a, &b, &info);
     else if (argc > 101)
         stack_500(&a, &b, &info);
@@ -125,7 +127,7 @@ int	main(int argc, char **argv)
 //		printf("Final: %lld\n", a->nbr);
 //		a = a->next;
 //	}
-//    see_stack(a);
+    see_stack(a);
 	return (1);
 }
 

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/push_swap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/push_swap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"/>
+				<Option working_dir="/Users/aheidy/push_swap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cmake">
-				<Option output="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/cmake" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"/>
+				<Option output="/Users/aheidy/push_swap/cmake-build-debug/cmake" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aheidy/push_swap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 cmake"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 cmake"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cmake/fast">
-				<Option output="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/cmake" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug"/>
+				<Option output="/Users/aheidy/push_swap/cmake-build-debug/cmake" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aheidy/push_swap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,41 +73,41 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 cmake/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap\ copy/push_swap\ 17:08\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 cmake/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aheidy/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c">
+		<Unit filename="/Users/aheidy/push_swap/additional.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c">
+		<Unit filename="/Users/aheidy/push_swap/array.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c">
+		<Unit filename="/Users/aheidy/push_swap/error.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c">
+		<Unit filename="/Users/aheidy/push_swap/operations.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c">
+		<Unit filename="/Users/aheidy/push_swap/push_swap.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.h">
+		<Unit filename="/Users/aheidy/push_swap/push_swap.h">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c">
+		<Unit filename="/Users/aheidy/push_swap/s.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c">
+		<Unit filename="/Users/aheidy/push_swap/sort.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/stack.c">
+		<Unit filename="/Users/aheidy/push_swap/stack.c">
 			<Option target="cmake"/>
 		</Unit>
-		<Unit filename="/Users/aheidy/push_swap copy/push_swap 17:08 4/CMakeLists.txt">
+		<Unit filename="/Users/aheidy/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

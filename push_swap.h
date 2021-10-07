@@ -47,7 +47,6 @@ void				rrr(t_stack **a, t_stack **b);
 void	            ft_push(t_stack **dest, t_stack **src);
 void	            pa(t_stack **dest, t_stack **src);
 void	            pb(t_stack **dest, t_stack **src);
-void				sort_5_elements(t_stack **a, t_stack **b, int argc);
 int                 ft_amount(t_stack *stk);
 int					*array(t_stack **stack, int argc, char **argv);
 int                 ft_check_position(t_stack *stk);
@@ -66,6 +65,7 @@ void	            sort_array(long long int **array, int start, int end);
 int                 get_index(long long int *arr, int nbr);
 void                sort_500_a(t_stack **a, t_stack **b, t_info **info);
 void                stack_500(t_stack **a, t_stack **b, t_info **info);
+void	            sort_5_elements(t_stack **a, t_stack **b, t_info **info, int argc);
 
 
 

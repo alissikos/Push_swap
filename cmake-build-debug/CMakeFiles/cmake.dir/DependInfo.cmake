@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/additional.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/additional.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/array.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/array.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/error.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/error.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/operations.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/operations.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/push_swap.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/push_swap.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/s.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/s.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/sort.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/sort.c.o"
-  "/Users/aheidy/push_swap copy/push_swap 17:08 4/stack.c" "/Users/aheidy/push_swap copy/push_swap 17:08 4/cmake-build-debug/CMakeFiles/cmake.dir/stack.c.o"
+  "/Users/aheidy/push_swap/additional.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/additional.c.o"
+  "/Users/aheidy/push_swap/array.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/array.c.o"
+  "/Users/aheidy/push_swap/error.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/error.c.o"
+  "/Users/aheidy/push_swap/operations.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/operations.c.o"
+  "/Users/aheidy/push_swap/push_swap.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/push_swap.c.o"
+  "/Users/aheidy/push_swap/s.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/s.c.o"
+  "/Users/aheidy/push_swap/sort.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/sort.c.o"
+  "/Users/aheidy/push_swap/stack.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/stack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

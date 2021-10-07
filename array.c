@@ -41,6 +41,8 @@ int get_index(long long int *arr, int nbr)
         if (nbr == arr[i])
             return (i);
         i++;
+//        printf("Nbr: %d\n", nbr);
+//        printf("Index: %d\n", i);
     }
     return (-1);
 }

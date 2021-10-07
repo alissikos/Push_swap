@@ -4,6 +4,9 @@
 CMakeFiles/cmake.dir/additional.c.o: \
  ../additional.c \
  ../push_swap.h
+CMakeFiles/cmake.dir/array.c.o: \
+ ../array.c \
+ ../push_swap.h
 CMakeFiles/cmake.dir/error.c.o: \
  ../error.c \
  ../push_swap.h
