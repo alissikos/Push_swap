@@ -62,10 +62,11 @@ void	            ft_putnbr(int n);
 void	            ft_putstr(char *str);
 void	            ft_print_order(const t_stack *a);
 void	            sort_array(long long int **array, int start, int end);
-int                 get_index(long long int *arr, int nbr);
+int                 get_index(long long int *arr, long long int nbr);
 void                sort_500_a(t_stack **a, t_stack **b, t_info **info);
 void                stack_500(t_stack **a, t_stack **b, t_info **info);
 void	            sort_5_elements(t_stack **a, t_stack **b, t_info **info, int argc);
+int	                arr_is_sorted(long long int **array);
 
 
 

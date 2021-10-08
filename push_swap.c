@@ -68,7 +68,7 @@ int	main(int argc, char **argv)
 	i = 1;
     check_input(NULL, argc);
     info = malloc(sizeof(t_info));
-    info->arr = malloc(sizeof(long long) * argc);
+    info->arr = malloc(sizeof(long long) * argc - 1);
 	while (i < argc)
 	{
 		elem = atoi_push(&a, argv[i]);
@@ -89,8 +89,15 @@ int	main(int argc, char **argv)
 //        printf("I: %d\n", i);
 		i++;
 	}
-    info->arr[i - 1] = '\0';
+//    info->arr[i - 1] = '\0';
     sort_array(&info->arr, 0, argc - 2);
+//    int j = 0;
+//    while (j < i - 1)
+//    {
+//        printf ("Sorted array: %lld\n", info->arr[j]);
+//        j++;
+//    }
+
 //    i = 0; // for print
 //    while (i < argc - 2) // for print
 //    {
@@ -127,7 +134,7 @@ int	main(int argc, char **argv)
 //		printf("Final: %lld\n", a->nbr);
 //		a = a->next;
 //	}
-    see_stack(a);
+//    see_stack(a);
 	return (1);
 }
 

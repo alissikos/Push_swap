@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/Users/aheidy/push_swap/additional.c
+push_swap.h
+/Users/aheidy/push_swap/push_swap.h
+
 /Users/aheidy/push_swap/array.c
+push_swap.h
+/Users/aheidy/push_swap/push_swap.h
+
+/Users/aheidy/push_swap/error.c
+push_swap.h
+/Users/aheidy/push_swap/push_swap.h
+
+/Users/aheidy/push_swap/operations.c
 push_swap.h
 /Users/aheidy/push_swap/push_swap.h
 
@@ -24,7 +36,15 @@ stdlib.h
 limits.h
 -
 
+/Users/aheidy/push_swap/s.c
+push_swap.h
+/Users/aheidy/push_swap/push_swap.h
+
 /Users/aheidy/push_swap/sort.c
+push_swap.h
+/Users/aheidy/push_swap/push_swap.h
+
+/Users/aheidy/push_swap/stack.c
 push_swap.h
 /Users/aheidy/push_swap/push_swap.h
 

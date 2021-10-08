@@ -25,24 +25,40 @@ void	sort_array(long long int **array, int start, int end)
             b--;
         }
     }
+//    if (arr_is_sorted(array))
+//        return ;
     if (b > start)
         sort_array(array, start, b);
     if (a < end)
         sort_array(array, a, end);
 }
 
-int get_index(long long int *arr, int nbr)
+int	arr_is_sorted(long long int **array)
 {
     int i;
 
     i = 0;
-    while (arr[i] != '\0')
+    while ((*array)[i])
     {
-        if (nbr == arr[i])
-            return (i);
+        if ((*array)[i] < (*array)[i + 1])
+            return (0);
+        i++;
+    }
+    return (1); // отсорт!!!!!!
+}
+
+int get_index(long long int *arr, long long int nbr)
+{
+    int i;
+
+    i = 0;
+    while (nbr != arr[i])
+    {
+//        if (nbr == arr[i])
+//            return (i);
         i++;
 //        printf("Nbr: %d\n", nbr);
 //        printf("Index: %d\n", i);
     }
-    return (-1);
+    return (i);
 }
