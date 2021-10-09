@@ -1,25 +1,5 @@
 #include "push_swap.h"
 
-// int	ft_push(t_stack **from, int nbr, int argc) //куда пушим и откуда 
-// {
-// 	t_stack	*new;
-
-// 	if (!from)
-// 		return (0);
-// 	if (!*from) // если нет списка(головы)
-// 	{
-// 		*from = new_stack(argc, nbr);
-// 		if (!from)
-// 			return (0);
-// 		return (1);
-// 	}
-// 	new = new_stack(argc, nbr);
-// 	if (!new)
-// 		return (0);
-// 	new->next =  *from;
-// 	*from = new;
-// }
-
 void	ft_push(t_stack **dest, t_stack **src)
 {
 	t_stack	*tmp;
@@ -37,27 +17,20 @@ void	ft_push(t_stack **dest, t_stack **src)
 
 void	pa(t_stack **dest, t_stack **src)
 {
-	ft_push(dest, src); // пуш в стек А из стека Б (с удалением первого элемента в Б) (where, from)
-	// (*a)->amount += 1;
-	// (*b)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
+	ft_push(dest, src);
 	write(1, "pa\n", 3);
 }
 
 void	pb(t_stack **dest, t_stack **src)
 {
-	ft_push (dest, src); // пуш в стек Б из стека А (с удалением первого элемента в А)
-	// (*a)->amount -= 1; // подумать при пустом стеке (если amount == 0 ??)
-	// (*b)->amount += 1;
+	ft_push (dest, src);
 	write(1, "pb\n", 3);
 }
 
 void	ft_swap(t_stack **stk)
 {
-	// t_stack	*elem1;
-	// t_stack	*elem2;
 	t_stack		*tmp;
 
-	// tmp = stk;
 	if ((*stk) && (*stk)->next)
 	{
 		tmp = (*stk)->next;
@@ -100,15 +73,10 @@ void	ft_rotate(t_stack	**stk)
 	last = *stk;
 	first = (*stk)->next;
 	while ((*stk)->next)
-	{
-		// printf ("%lld", (*stk)->nbr);
 		*stk = (*stk)->next;
-	}
 	(*stk)->next = last;
 	last->next = NULL;
 	*stk = first;
-	// printf("First: %lld\n", (*stk)->nbr);
-	// printf("Last: %lld\n", last->nbr);
 }
 
 void	ra(t_stack **a)
@@ -133,12 +101,6 @@ void	rrotate(t_stack **stk)
 		return ;
 	tmp = *stk;
 	last = *stk;
-//    while (tmp) // пока есть укль на след элт (принт аргументов)
-//    {
-//        printf("Tmp : %lld\n", tmp->nbr);
-//        tmp = tmp->next; // передвигаем указатель
-//    }
-//    tmp = *stk;
 	while (tmp->next)
 	{
 		if (!tmp->next->next)

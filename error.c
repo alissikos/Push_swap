@@ -7,24 +7,10 @@ void	error(t_stack *stack)
 	exit (1);
 }
 
-void	check_input(t_stack **stack, int argc) //провер, что подается на ввод
+void	check_input(t_stack **stack, int argc)
 {
-	int	i; // каждый аргумент
-    int j; // каждый символ аргумента
-
-	i = argc - 1;
-    j = 0;//  перв арг(0) - прогр
 	if (argc == 1)
 		error(*stack);
-//    while (i >= 0)
-//    {
-//        while (argv[i][j] != '\0')
-//        {
-//            if (argv[i][j] == '-' || argv[i][j] == '+')
-//                error((*stack));
-//            i--;
-//        }
-//    }
 }
 
 void	dispfree(t_stack *stk)
@@ -34,14 +20,12 @@ void	dispfree(t_stack *stk)
 	while (stk)
 	{
 		tmp = stk;
-		// printf("%ld ", stk->nbr);
 		stk = stk->next;
 		free(tmp);
 	}
-//	printf("\n");
-}	
+}
 
-long long int	atoi_push(t_stack **stack, const char *str) // передать еще лист (стек а для очищения) - проверка аргумента (число)
+long long int	atoi_push(t_stack **stack, const char *str)
 {
 	int				i;
 	long long int	k;
@@ -54,14 +38,11 @@ long long int	atoi_push(t_stack **stack, const char *str) // передать е
 		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
 		i++;
 	if (str[i] == '-')
-    {
-        minus = -1;
-//        i++;
-    }
+		minus = -1;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-    if (!(str[i] >= 48 && str[i] <= 57))
-        error(*stack);
+	if (!(str[i] >= 48 && str[i] <= 57))
+		error(*stack);
 	while (str[i] >= 48 && str[i] <= 57 && str[i] != '\0')
 	{
 		k = k * 10 + str[i] - 48;
