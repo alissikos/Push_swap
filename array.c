@@ -2,8 +2,8 @@
 
 void	sort_array(long long int **array, int start, int end)
 {
-    int	a;
-    int	b;
+    int a;
+    int b;
     int mid;
     int c;
 

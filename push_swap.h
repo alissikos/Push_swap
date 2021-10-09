@@ -30,7 +30,7 @@ int					pop(t_stack **stack);
 void				dispfree(t_stack *stk);
 void				error(t_stack *stack);
 long long int		atoi_push(t_stack **stack, const char *str);
-void				check_input(t_stack **stack, int argc);
+void	            check_input(t_stack **stack, int argc);
 void				check_duplicates_maxint(t_stack **stack, int elem);
 void				ft_swap(t_stack **stk);
 void				ft_rotate(t_stack	**stk);
@@ -67,6 +67,7 @@ void                sort_500_a(t_stack **a, t_stack **b, t_info **info);
 void                stack_500(t_stack **a, t_stack **b, t_info **info);
 void	            sort_5_elements(t_stack **a, t_stack **b, t_info **info, int argc);
 int	                arr_is_sorted(long long int **array);
+void                ft_validation(int elem);
 
 
 

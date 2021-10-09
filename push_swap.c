@@ -38,17 +38,26 @@ void	check_duplicates_maxint(t_stack **stack, int elem)
 	t_stack		*tmp;
 
 	tmp = *stack;
-//    if (!tmp)
+	// if (!tmp)
+	// 	error(*stack);
+//	if (elem > INT_MAX || elem < INT_MIN)
+//		error(*stack);
+//    if (elem == '+' || elem == '-')
 //        error(*stack);
-//    tmp = tmp->next;
-    if (elem > INT_MAX || elem < INT_MIN)
-        error(*stack);
 	while (tmp->next != NULL)
 	{
 		if (tmp->nbr == elem)
 			error(*stack);
 		tmp = tmp->next;
 	}
+}
+
+void ft_validation(int elem)
+{
+    if (elem > INT_MAX || elem < INT_MIN)
+        error(NULL);
+    if (elem == '+' || elem == '-')
+        error(NULL);
 }
 
 int	main(int argc, char **argv)
@@ -71,6 +80,7 @@ int	main(int argc, char **argv)
     info->arr = malloc(sizeof(long long) * argc - 1);
 	while (i < argc)
 	{
+//        ft_validation(elem);
 		elem = atoi_push(&a, argv[i]);
         list_add_back(&a, elem);
         if (i == 1)
@@ -135,6 +145,16 @@ int	main(int argc, char **argv)
 //		a = a->next;
 //	}
 //    see_stack(a);
+//    info = NULL; // сделать проверку на утечки
+    free(info->arr);
+    free(info);
+//    info->arr = NULL;
+
+//    a = NULL;
+//    b = NULL;
+
+    dispfree(a);
+    dispfree(b);
 	return (1);
 }
 

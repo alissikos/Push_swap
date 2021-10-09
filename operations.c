@@ -148,7 +148,7 @@ void	rrotate(t_stack **stk)
 	first = tmp;
 	first->next = *stk;
 	last->next = NULL;
-    *stk = first;
+	*stk = first;
 }
 
 void	rra(t_stack **a)

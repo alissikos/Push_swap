@@ -2,11 +2,11 @@
 
 int	is_sorted(t_stack **stack)
 {
-    t_stack    *tmp;
-    int	flag;
+    t_stack *tmp;
+    int     flag;
 
     tmp = *stack;
-	flag = 0;
+    flag = 0;
 	if (!tmp)
 		error(*stack);
 	while (tmp->next)
@@ -68,7 +68,7 @@ void frotate(t_stack **stk, int index, int size) // прокрутка стек�
 void	sort_5_elements(t_stack **a, t_stack **b, t_info **info, int argc)
 {
     int i;
-
+    
     i = 0;
     if (!(*a))
         error(*a);

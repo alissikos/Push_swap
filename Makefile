@@ -17,7 +17,7 @@ RM =	rm -f
 
 INCL =	push_swap.h
 
-FLAGS = -Wall -Wextra -Werror -g -fsanitize=address
+FLAGS = -Wall -Wextra -Werror -g #-fsanitize=address
 
 all :	$(NAME)
 
