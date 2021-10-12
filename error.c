@@ -15,7 +15,7 @@
 void	ft_free(t_stack *stk)
 {
 	t_stack	*tmp;
-	
+
 	tmp = NULL;
 	while (stk)
 	{

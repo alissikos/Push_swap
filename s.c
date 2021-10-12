@@ -25,7 +25,7 @@ int	ft_amount(t_stack *stk)
 		stk = stk->next;
 	}
 	return (amount);
- }
+}
 
  int	ft_max_index(t_stack **stk)
  {
@@ -121,7 +121,7 @@ void	sort_500_a(t_stack **a, t_stack **b, t_info **info)
 void	sort_b(t_stack **a, t_stack **b)
 {
 	int	max;
-	
+
 	while ((*b) != NULL)
 	{
 		max = ft_max_index(b);

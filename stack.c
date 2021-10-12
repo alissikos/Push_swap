@@ -15,7 +15,7 @@
 t_stack	*new_stack(int nb)
 {
 	t_stack	*node;
-	
+
 	node = (t_stack *)malloc(sizeof(t_stack));
 	if (!node)
 		return (0);
@@ -27,7 +27,7 @@ t_stack	*new_stack(int nb)
 void	list_add_back(t_stack **stack, int elem)
 {
 	t_stack	*tmp;
-	
+
 	if (stack && *stack)
 	{
 		tmp = *stack;

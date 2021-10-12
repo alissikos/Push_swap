@@ -18,7 +18,7 @@ void	sort_array(long long int **array, int start, int end)
 	int	b;
 	int	mid;
 	int	c;
-	
+
 	a = start;
 	b = end;
 	mid = (*array)[(end + start) / 2];
@@ -46,7 +46,7 @@ void	sort_array(long long int **array, int start, int end)
 int	get_index(long long int *arr, long long int nbr)
 {
 	int	i;
-	
+
 	i = 0;
 	while (nbr != arr[i])
 		i++;

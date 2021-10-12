@@ -15,7 +15,7 @@
 int main(int argc, char **argv, t_stack **stack, t_info **info)
 {
 	int	i;
-	
+
 	i = 1;
 	if (argc == 1)
 		ft_error(NULL);
