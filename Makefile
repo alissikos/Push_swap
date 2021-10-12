@@ -7,6 +7,7 @@ SRC	=	error.c			\
 		sort.c			\
 		stack.c			\
 		array.c			\
+		check.c			\
 		additional.c
 
 OBJ = 	$(SRC:.c=.o)

@@ -86,6 +86,9 @@
 		<Unit filename="/Users/aheidy/push_swap/array.c">
 			<Option target="cmake"/>
 		</Unit>
+		<Unit filename="/Users/aheidy/push_swap/check.c">
+			<Option target="cmake"/>
+		</Unit>
 		<Unit filename="/Users/aheidy/push_swap/error.c">
 			<Option target="cmake"/>
 		</Unit>

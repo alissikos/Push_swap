@@ -177,6 +177,30 @@ array.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/array.c.s
 .PHONY : array.c.s
 
+check.o: check.c.o
+.PHONY : check.o
+
+# target to build an object file
+check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/check.c.o
+.PHONY : check.c.o
+
+check.i: check.c.i
+.PHONY : check.i
+
+# target to preprocess a source file
+check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/check.c.i
+.PHONY : check.c.i
+
+check.s: check.c.s
+.PHONY : check.s
+
+# target to generate assembly for a file
+check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/check.c.s
+.PHONY : check.c.s
+
 error.o: error.c.o
 .PHONY : error.o
 
@@ -336,6 +360,9 @@ help:
 	@echo "... array.o"
 	@echo "... array.i"
 	@echo "... array.s"
+	@echo "... check.o"
+	@echo "... check.i"
+	@echo "... check.s"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"

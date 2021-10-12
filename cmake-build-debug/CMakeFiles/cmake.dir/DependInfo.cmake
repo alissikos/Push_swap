@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/aheidy/push_swap/additional.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/additional.c.o"
   "/Users/aheidy/push_swap/array.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/array.c.o"
+  "/Users/aheidy/push_swap/check.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/check.c.o"
   "/Users/aheidy/push_swap/error.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/error.c.o"
   "/Users/aheidy/push_swap/operations.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/operations.c.o"
   "/Users/aheidy/push_swap/push_swap.c" "/Users/aheidy/push_swap/cmake-build-debug/CMakeFiles/cmake.dir/push_swap.c.o"

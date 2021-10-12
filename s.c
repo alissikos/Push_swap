@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   s.c                                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/10 00:45:12 by aheidy            #+#    #+#             */
+/*   Updated: 2021/10/10 00:47:27 by aheidy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
- int	ft_amount(t_stack *stk)
- {
+int	ft_amount(t_stack *stk)
+{
 	int	amount;
 
 	if (!stk)
@@ -33,10 +45,10 @@
 		}
 	}
 	return (max_i);
- }
+}
 
- int	ft_check_position(t_stack *stk)
- {
+int	ft_check_position(t_stack *stk)
+{
 	int	len;
 	int	pos;
 	int	max;
@@ -56,10 +68,10 @@
 	else
 		max = 0;
 	return (max);
- }
+}
 
- void	sort_100_a(t_stack **a, t_stack **b, t_info **info)
- {
+void	sort_100_a(t_stack **a, t_stack **b, t_info **info)
+{
 	int	i;
 
 	i = 0;
@@ -80,7 +92,7 @@
 		else if ((*a)->index >= i && ft_amount(*a) > 1)
 			ra(a);
 	}
- }
+}
 
 void	sort_500_a(t_stack **a, t_stack **b, t_info **info)
 {
@@ -109,6 +121,7 @@ void	sort_500_a(t_stack **a, t_stack **b, t_info **info)
 void	sort_b(t_stack **a, t_stack **b)
 {
 	int	max;
+	
 	while ((*b) != NULL)
 	{
 		max = ft_max_index(b);

@@ -1,55 +1,56 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_error.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aheidy <aheidy@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/10 00:44:53 by aheidy            #+#    #+#             */
+/*   Updated: 2021/10/10 00:44:54 by aheidy           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void	error(t_stack *stack)
-{
-	dispfree(stack);
-	write(2, "Error\n", 6);
-	exit (1);
-}
-
-void	check_input(t_stack **stack, int argc)
-{
-	if (argc == 1)
-		error(*stack);
-}
-
-void	dispfree(t_stack *stk)
+void	ft_free(t_stack *stk)
 {
 	t_stack	*tmp;
-
+	
+	tmp = NULL;
 	while (stk)
 	{
 		tmp = stk;
 		stk = stk->next;
 		free(tmp);
 	}
+	stk = NULL;
+	tmp = NULL;
 }
 
-long long int	atoi_push(t_stack **stack, const char *str)
+void	ft_error(t_stack *stack)
 {
-	int				i;
-	long long int	k;
-	int				minus;
+	ft_free(stack);
+	write(2, "Error\n", 6);
+	exit (1);
+}
 
-	k = 0;
-	i = 0;
-	minus = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-')
-		minus = -1;
-	if (str[i] == '+' || str[i] == '-')
-		i++;
-	if (!(str[i] >= 48 && str[i] <= 57))
-		error(*stack);
-	while (str[i] >= 48 && str[i] <= 57 && str[i] != '\0')
+void	ft_free_info(t_info *info)
+{
+	if (info)
 	{
-		k = k * 10 + str[i] - 48;
-		i++;
+		if (info->arr)
+		{
+			free (info->arr);
+			info->arr = NULL;
+		}
+		free(info);
+		info = NULL;
 	}
-	if ((str[i] != ' ' && str[i] != '\0'))
-		error(*stack);
-	k = k * minus;
-	return (k);
+}
+
+void	ft_isclear(t_stack *a, t_stack *b, t_info *info)
+{
+	ft_free(a);
+	ft_free(b);
+	ft_free_info(info);
 }
