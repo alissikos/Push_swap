@@ -18,7 +18,7 @@ void	check_input(t_stack **stack, int argc)
 		ft_error(*stack);
 }
 
-void	check_duplicates_maxint(t_stack **stack, int elem)
+void	check_duplicates_maxint(t_stack **stack, long long int elem)
 {
 	t_stack		*tmp;
 
@@ -29,6 +29,8 @@ void	check_duplicates_maxint(t_stack **stack, int elem)
 			ft_error(*stack);
 		tmp = tmp->next;
 	}
+	if (elem > INT_MAX || elem < INT_MIN)
+		ft_error(*stack);
 }
 
 long long int	atoi_push(t_stack **stack, const char *str)
@@ -41,7 +43,7 @@ long long int	atoi_push(t_stack **stack, const char *str)
 	i = 0;
 	minus = 1;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-			|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
+		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
 		i++;
 	if (str[i] == '-')
 		minus = -1;

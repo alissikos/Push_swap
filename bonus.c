@@ -10,47 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 
-void	ft_free(t_stack *stk)
+int	is_sorted_b(t_stack **stack)
 {
 	t_stack	*tmp;
+	int		flag;
 
-	tmp = NULL;
-	while (stk)
+	tmp = *stack;
+	flag = 0;
+	if (!tmp)
+		ft_error(*stack);
+	while (tmp->next)
 	{
-		tmp = stk;
-		stk = stk->next;
-		free(tmp);
+		if (tmp->nbr > tmp->next->nbr)
+			flag++;
+		tmp = tmp->next;
 	}
-	stk = NULL;
-	tmp = NULL;
-}
-
-void	ft_error(t_stack *stack)
-{
-	ft_free(stack);
-	write(2, "Error\n", 6);
-	exit (0);
-}
-
-void	ft_free_info(t_info *info)
-{
-	if (info)
-	{
-		if (info->arr)
-		{
-			free (info->arr);
-			info->arr = NULL;
-		}
-		free(info);
-		info = NULL;
-	}
-}
-
-void	ft_isclear(t_stack *a, t_stack *b, t_info *info)
-{
-	ft_free(a);
-	ft_free(b);
-	ft_free_info(info);
+	if (flag != 0)
+		return (0);
+	return (1);
 }

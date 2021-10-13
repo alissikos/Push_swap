@@ -10,47 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 
-void	ft_free(t_stack *stk)
+int	ft_strcmp(const char *str1, const char *str2)
 {
-	t_stack	*tmp;
+	size_t	i;
 
-	tmp = NULL;
-	while (stk)
+	i = 0;
+	while ((str1[i] != '\0' || str2[i] != '\0'))
 	{
-		tmp = stk;
-		stk = stk->next;
-		free(tmp);
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		i++;
 	}
-	stk = NULL;
-	tmp = NULL;
-}
-
-void	ft_error(t_stack *stack)
-{
-	ft_free(stack);
-	write(2, "Error\n", 6);
-	exit (0);
-}
-
-void	ft_free_info(t_info *info)
-{
-	if (info)
-	{
-		if (info->arr)
-		{
-			free (info->arr);
-			info->arr = NULL;
-		}
-		free(info);
-		info = NULL;
-	}
-}
-
-void	ft_isclear(t_stack *a, t_stack *b, t_info *info)
-{
-	ft_free(a);
-	ft_free(b);
-	ft_free_info(info);
+	return (0);
 }
