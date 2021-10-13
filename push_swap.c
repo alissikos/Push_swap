@@ -17,7 +17,7 @@ void	ft_sort(t_stack **a, t_stack **b, int argc, t_info **info)
 	if (argc <= 4)
 		sort_3_elements(a);
 	if (argc > 4 && argc <= 6)
-		sort_5_elements(a, b, info, argc);
+		sort_5_elements(a, b, info/*, argc*/);
 	if (argc <= 101 && argc >= 7)
 		stack_100(a, b, info);
 	else if (argc > 101)
@@ -52,6 +52,7 @@ int	main(int argc, char **argv)
 	}
 	sort_array(&info->arr, 0, argc - 2);
 	ft_sort(&a, &b, argc, &info);
+//	see_stack(a);
 	ft_isclear(a, b, info);
 	return (1);
 }

@@ -68,7 +68,7 @@ void				sort_array(long long int **array, int start, int end);
 int					get_index(long long int *arr, long long int nbr);
 void				sort_500_a(t_stack **a, t_stack **b, t_info **info);
 void				stack_500(t_stack **a, t_stack **b, t_info **info);
-void				sort_5_elements(t_stack **a, t_stack **b, t_info **info, int argc);
+void				sort_5_elements(t_stack **a, t_stack **b, t_info **info/*, int argc*/);
 void				ft_sort(t_stack **a, t_stack **b, int argc, t_info **info);
 int					ft_strcmp(const char *str1, const char *str2);
 
