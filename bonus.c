@@ -31,3 +31,23 @@ int	is_sorted_b(t_stack **stack)
 		return (0);
 	return (1);
 }
+
+int	ft_strcmp(const char *str1, const char *str2)
+{
+	size_t	i;
+
+	i = 0;
+	while ((str1[i] != '\0' || str2[i] != '\0'))
+	{
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		i++;
+	}
+	return (0);
+}
+
+void	rrr_b(t_stack **a, t_stack **b)
+{
+	rrotate_b(a);
+	rrotate_b(b);
+}

@@ -87,9 +87,3 @@ void	rrotate_b(t_stack **stk)
 	last->next = NULL;
 	*stk = first;
 }
-
-void	rrr_b(t_stack **a, t_stack **b)
-{
-	rrotate_b(a);
-	rrotate_b(b);
-}

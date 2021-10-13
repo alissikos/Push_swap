@@ -12,64 +12,6 @@
 
 #include "push_swap.h"
 
-int	ft_amount(t_stack *stk)
-{
-	int	amount;
-
-	if (!stk)
-		return (0);
-	amount = 1;
-	while (stk->next)
-	{
-		amount++;
-		stk = stk->next;
-	}
-	return (amount);
-}
-
- int	ft_max_index(t_stack **stk)
- {
-	int		max_i;
-	t_stack	*tmp;
-
-	tmp = *stk;
-	max_i = 1;
-	if (tmp)
-	{
-		max_i = tmp->index;
-		while (tmp != NULL)
-		{
-			if (max_i < tmp->index)
-				max_i = tmp->index;
-			tmp = tmp->next;
-		}
-	}
-	return (max_i);
-}
-
-int	ft_check_position(t_stack *stk)
-{
-	int	len;
-	int	pos;
-	int	max;
-
-	pos = 1;
-	if (!stk)
-		return (0);
-	len = ft_amount(stk);
-	max = ft_max_index(&stk);
-	while (stk->next && stk->index != max)
-	{
-		pos++;
-		stk = stk->next;
-	}
-	if (pos > len / 2)
-		max = 1;
-	else
-		max = 0;
-	return (max);
-}
-
 void	sort_100_a(t_stack **a, t_stack **b, t_info **info)
 {
 	int	i;

@@ -17,7 +17,7 @@ void	ft_sort(t_stack **a, t_stack **b, int argc, t_info **info)
 	if (argc <= 4)
 		sort_3_elements(a);
 	if (argc > 4 && argc <= 6)
-		sort_5_elements(a, b, info/*, argc*/);
+		sort_5_elements(a, b, info);
 	if (argc <= 101 && argc >= 7)
 		stack_100(a, b, info);
 	else if (argc > 101)
@@ -32,27 +32,22 @@ int	main(int argc, char **argv)
 	int				i;
 	long long int	elem;
 
-	if (argc == 1)
-		ft_error(NULL);
+	check_input(argc);
 	a = NULL;
 	b = NULL;
 	i = 1;
-	check_input(NULL, argc);
 	info = malloc(sizeof(t_info));
 	info->arr = malloc(sizeof(long long) * argc - 1);
 	while (i < argc)
 	{
 		elem = atoi_push(&a, argv[i]);
 		list_add_back(&a, elem);
-		if (i == 1)
-			info->head = a;
 		check_duplicates_maxint(&a, elem);
 		info->arr[i - 1] = elem;
 		i++;
 	}
 	sort_array(&info->arr, 0, argc - 2);
 	ft_sort(&a, &b, argc, &info);
-//	see_stack(a);
 	ft_isclear(a, b, info);
 	return (1);
 }

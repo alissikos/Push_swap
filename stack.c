@@ -24,7 +24,7 @@ t_stack	*new_stack(int nb)
 	return (node);
 }
 
-void	list_add_back(t_stack **stack, int elem)
+void	list_add_back(t_stack **stack, long long int elem)
 {
 	t_stack	*tmp;
 

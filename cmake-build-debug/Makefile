@@ -129,30 +129,6 @@ cmake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/build
 .PHONY : cmake/fast
 
-additional.o: additional.c.o
-.PHONY : additional.o
-
-# target to build an object file
-additional.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.o
-.PHONY : additional.c.o
-
-additional.i: additional.c.i
-.PHONY : additional.i
-
-# target to preprocess a source file
-additional.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.i
-.PHONY : additional.c.i
-
-additional.s: additional.c.s
-.PHONY : additional.s
-
-# target to generate assembly for a file
-additional.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/additional.c.s
-.PHONY : additional.c.s
-
 array.o: array.c.o
 .PHONY : array.o
 
@@ -176,6 +152,30 @@ array.s: array.c.s
 array.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/array.c.s
 .PHONY : array.c.s
+
+big_sort.o: big_sort.c.o
+.PHONY : big_sort.o
+
+# target to build an object file
+big_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/big_sort.c.o
+.PHONY : big_sort.c.o
+
+big_sort.i: big_sort.c.i
+.PHONY : big_sort.i
+
+# target to preprocess a source file
+big_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/big_sort.c.i
+.PHONY : big_sort.c.i
+
+big_sort.s: big_sort.c.s
+.PHONY : big_sort.s
+
+# target to generate assembly for a file
+big_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/big_sort.c.s
+.PHONY : big_sort.c.s
 
 check.o: check.c.o
 .PHONY : check.o
@@ -273,53 +273,29 @@ push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
-s.o: s.c.o
-.PHONY : s.o
+small_sort.o: small_sort.c.o
+.PHONY : small_sort.o
 
 # target to build an object file
-s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.o
-.PHONY : s.c.o
+small_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/small_sort.c.o
+.PHONY : small_sort.c.o
 
-s.i: s.c.i
-.PHONY : s.i
-
-# target to preprocess a source file
-s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.i
-.PHONY : s.c.i
-
-s.s: s.c.s
-.PHONY : s.s
-
-# target to generate assembly for a file
-s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/s.c.s
-.PHONY : s.c.s
-
-sort.o: sort.c.o
-.PHONY : sort.o
-
-# target to build an object file
-sort.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/sort.c.o
-.PHONY : sort.c.o
-
-sort.i: sort.c.i
-.PHONY : sort.i
+small_sort.i: small_sort.c.i
+.PHONY : small_sort.i
 
 # target to preprocess a source file
-sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/sort.c.i
-.PHONY : sort.c.i
+small_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/small_sort.c.i
+.PHONY : small_sort.c.i
 
-sort.s: sort.c.s
-.PHONY : sort.s
+small_sort.s: small_sort.c.s
+.PHONY : small_sort.s
 
 # target to generate assembly for a file
-sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/sort.c.s
-.PHONY : sort.c.s
+small_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake.dir/build.make CMakeFiles/cmake.dir/small_sort.c.s
+.PHONY : small_sort.c.s
 
 stack.o: stack.c.o
 .PHONY : stack.o
@@ -354,12 +330,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cmake"
-	@echo "... additional.o"
-	@echo "... additional.i"
-	@echo "... additional.s"
 	@echo "... array.o"
 	@echo "... array.i"
 	@echo "... array.s"
+	@echo "... big_sort.o"
+	@echo "... big_sort.i"
+	@echo "... big_sort.s"
 	@echo "... check.o"
 	@echo "... check.i"
 	@echo "... check.s"
@@ -372,12 +348,9 @@ help:
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
-	@echo "... s.o"
-	@echo "... s.i"
-	@echo "... s.s"
-	@echo "... sort.o"
-	@echo "... sort.i"
-	@echo "... sort.s"
+	@echo "... small_sort.o"
+	@echo "... small_sort.i"
+	@echo "... small_sort.s"
 	@echo "... stack.o"
 	@echo "... stack.i"
 	@echo "... stack.s"

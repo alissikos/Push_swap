@@ -31,13 +31,13 @@ typedef struct s_info
 }					t_info;
 
 t_stack				*new_stack(int nb);
-void				list_add_back(t_stack **stack, int elem);
+void				list_add_back(t_stack **stack, long long int elem);
 void				ft_free(t_stack *stk);
 void				ft_free_info(t_info *info);
 void				ft_isclear(t_stack *a, t_stack *b, t_info *info);
 void				ft_error(t_stack *stack);
 long long int		atoi_push(t_stack **stack, const char *str);
-void				check_input(t_stack **stack, int argc);
+void				check_input(int argc);
 void				check_duplicates_maxint(t_stack **stack, long long int elem);
 void				ft_swap(t_stack **stk);
 void				ft_rotate(t_stack	**stk);
@@ -60,17 +60,11 @@ void				stack_100(t_stack **a, t_stack **b, t_info **info);
 int					ft_max_index(t_stack **stk);
 int					is_sorted(t_stack **stack);
 void				see_stack(const t_stack *a);
-int					ft_strlen(char *str);
-void				ft_putchar(char c);
-void				ft_putnbr(int n);
-void				ft_putstr(char *str);
 void				sort_array(long long int **array, int start, int end);
 int					get_index(long long int *arr, long long int nbr);
 void				sort_500_a(t_stack **a, t_stack **b, t_info **info);
 void				stack_500(t_stack **a, t_stack **b, t_info **info);
-void				sort_5_elements(t_stack **a, t_stack **b, t_info **info/*, int argc*/);
+void				sort_5_elements(t_stack **a, t_stack **b, t_info **info);
 void				ft_sort(t_stack **a, t_stack **b, int argc, t_info **info);
 int					ft_strcmp(const char *str1, const char *str2);
-
-
 #endif

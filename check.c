@@ -12,10 +12,10 @@
 
 #include "push_swap.h"
 
-void	check_input(t_stack **stack, int argc)
+void	check_input(int argc)
 {
 	if (argc == 1)
-		ft_error(*stack);
+		ft_error(NULL);
 }
 
 void	check_duplicates_maxint(t_stack **stack, long long int elem)

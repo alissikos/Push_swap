@@ -12,52 +12,43 @@
 
 #include "push_swap.h"
 
-void	ft_push(t_stack **dest, t_stack **src)
+void	rrotate(t_stack **stk)
 {
 	t_stack	*tmp;
+	t_stack	*first;
+	t_stack	*last;
 
-	tmp = NULL;
-	if (*src)
+	if (!(*stk) || !(*stk)->next)
+		return ;
+	tmp = *stk;
+	last = *stk;
+	while (tmp->next)
 	{
-		if ((*src) && (*src)->next)
-			tmp = (*src)->next;
-		(*src)->next = (*dest);
-		(*dest) = (*src);
-		(*src) = tmp;
+		if (!tmp->next->next)
+			last = tmp;
+		tmp = tmp->next;
 	}
+	first = tmp;
+	first->next = *stk;
+	last->next = NULL;
+	*stk = first;
 }
 
-void	pa(t_stack **dest, t_stack **src)
+void	rra(t_stack **a)
 {
-	ft_push(dest, src);
-	write(1, "pa\n", 3);
+	rrotate(a);
+	write(1, "rra\n", 4);
 }
 
-void	pb(t_stack **dest, t_stack **src)
+void	rrb(t_stack **b)
 {
-	ft_push (dest, src);
-	write(1, "pb\n", 3);
+	rrotate(b);
+	write(1, "rrb\n", 4);
 }
 
-void	ft_swap(t_stack **stk)
+void	rrr(t_stack **a, t_stack **b)
 {
-	t_stack		*tmp;
-
-	if ((*stk) && (*stk)->next)
-	{
-		tmp = (*stk)->next;
-		if ((*stk)->next->next)
-			(*stk)->next = (*stk)->next->next;
-		else
-			(*stk)->next = NULL;
-		tmp->next = (*stk);
-		(*stk) = tmp;
-		tmp = NULL;
-	}
-}
-
-void	sa(t_stack **a)
-{
-	ft_swap(a);
-	write(1, "sa\n", 3);
+	rrotate(a);
+	rrotate(b);
+	write(1, "rrr\n", 4);
 }
